@@ -1,0 +1,13 @@
+prefix=/opt/linux/usr
+exec_prefix=${prefix}
+libdir=/opt/linux/usr/lib/release/arm/x64
+sharedlibdir=${libdir}
+includedir=/opt/linux/usr/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.11
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
